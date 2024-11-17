@@ -1,0 +1,97 @@
+/* Grunnleggende stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header .logo {
+    max-width: 150px; /* Juster logoens bredde */
+    height: auto; /* Bevar proporsjonene */
+}
+header p {
+    color: white; /* Gjør teksten hvit */
+    font-size: 16px; /* Juster gjerne størrelsen etter behov */
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Sentrer kortene */
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.news-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Fyll bredden på mobil */
+    max-width: 500px; /* Begrens bredden på PC */
+}
+
+
+.news-card img {
+    width: 100%;
+    max-height: auto; /* Begrens høyden på bildene */
+    object-fit: cover; /* Beskjærer bildet slik at det fyller rammen på en estetisk måte */
+    border-bottom: 1px solid #ddd; /* Legg til en skillelinje for visuell struktur */
+    position: relative
+
+}
+
+
+.news-content {
+    padding: 1rem;
+}
+
+.news-content h2 {
+    margin: 0 0 0.5rem;
+}
+
+.news-content p {
+    margin: 0 0 1rem;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s;
+}
+
+/* Responsiv design */
+@media (min-width: 768px) {
+    main {
+        padding: 2rem 10rem; /* Ekstra padding for store skjermer */
+    }
+}
